@@ -1,5 +1,5 @@
 {% set name = "wagtail-markdown" %}
-{% set version = "0.11.1" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/wagtail_markdown-{{ version }}.tar.gz
-  sha256: afcb64efac5b1b57de9f7cc475987c0c7dec5b669833e4617ec4658880de0f77
+  sha256: 61a4bb6167bc74247256e640430b76a6d62fa7205233af63e00698fd8f65a041
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - wagtail >=4.1
+    - wagtail >=5.2
     - markdown >=3.3,<4
     - bleach >=3.3,<5
 
