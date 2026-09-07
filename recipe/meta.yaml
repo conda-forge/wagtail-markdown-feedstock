@@ -1,13 +1,13 @@
 {% set name = "wagtail-markdown" %}
-{% set version = "0.14.1" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wagtail_markdown-{{ version }}.tar.gz
-  sha256: f8685ca937b15c662be9eb972a477aebdbdd4a9aad60716b2a59f7bed898b165
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/wagtail_markdown-{{ version }}.tar.gz
+  sha256: 08d58177a6f015c99d2597f681d6f8c276df5d7f74721ab24996d4582a2426da
 
 build:
   noarch: python
